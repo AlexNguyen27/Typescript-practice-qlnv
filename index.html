@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+      <!-- <button onlick="thongBao()">click</button> -->
+      
+      <div class="form-group w-50 mx-auto">
+          <p>Tìm Kiếm</p>
+          <input type="text" class="form-control w-50 mb-2" id="txtSearch">
+          <button  class="btn btn-success" id="btnTim">Tìm kiếm</button>
+      </div>
+      
+      <form class="w-50 mx-auto">
+        <h1 class="text-center">Thêm nhân viên</h1>
+        <div class="form-group">
+          <label>Mã nhân viên</label>
+          <input type="text" class="form-control" id="txtMaNV">
+        </div>
+        <div class="form-group">
+          <label>Họ tên</label>
+          <input type="text" class="form-control" id="txtHoTen">
+        </div>
+        <div class="form-group">
+          <label>Lương cơ bản</label>
+          <input type="text" class="form-control" id="txtLuongCB">
+        </div>
+        <div class="form-group"> 
+            <label>Loại nhân viên</label>
+            <select id="loainv" class="form-control">
+              <option>Sếp</option>
+              <option>Trưởng phòng</option>
+              <option>Thường</option>
+            </select>
+        </div>
+        <!-- button trong form mac dinh la submit -->
+        <button class="btn btn-success" id="btnThem" type="button">Thêm nhân viên</button>
+      </form>
+      <br>
+    <div class= "d-flex justify-content-end">
+      <select id="selectSort">
+        <option value="0">Từ A tới Z</option>
+        <option value="1">Từ Z tới A </option>
+      </select>
+    </div>
+
+      <table class="table">
+        <thead>
+          <th>Mã nhân viên</th>
+          <th>Họ tên</th>
+          <th>Lương cơ bản</th>
+          <th>Tổng lương</th>
+        </thead>
+        <tbody id="tableNhanVien">
+          </tbody>
+      </table>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="dist/js/bundle.js"></script>
+</body>
+</html>
