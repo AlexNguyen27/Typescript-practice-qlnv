@@ -12,7 +12,7 @@
   "dependencies": {
     "@types/jquery": "^3.3.29",
     "bootstrap": "^4.3.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.11",
     "typescript": "^3.3.3333",
     "webpack": "^4.29.6",
